@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Popins:wght@400;600&display=swap');
+
+:root {
+    --cor-fundo: #ffffff;
+    --cor-container: #ffffff;
+    --cor-primaria: #a32742;
+    --cor-texto-principal: #333333;
+    --cor-texto-secundario: #6c757d;
+    --cor-borda: #920404;
+    --fonte-principal: 'Popins', sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+#background-canvas {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+}
+
+.container {
+    width: 380px;
+    padding: 40px;
+    background-color: var(--cor-container);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid var(--cor-borda);
+}
+
+h1 {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.subtitulo {
+    color: var(--cor-texto-secundario);
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+input, button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda);
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+button {
+    cursor: pointer;
+    font-weight: 600;
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    margin: 10px 0;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    min-height: 25px;
+    color: var(--cor-primaria);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#resultado.visível {
+    opacity: 1;
+}
