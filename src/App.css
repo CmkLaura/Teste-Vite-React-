@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Popins:wght@400;600&display=swap');
 
 :root {
-    --cor-fundo: #ffffff;
-    --cor-container: #ffffff;
+    --cor-fundo: #000000;
+    --cor-container: #000000;
     --cor-primaria: #a32742;
     --cor-texto-principal: #333333;
     --cor-texto-secundario: #6c757d;
@@ -74,7 +74,7 @@ button {
     cursor: pointer;
     font-weight: 600;
     background-color: var(--cor-primaria);
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     margin: 10px 0;
 }
