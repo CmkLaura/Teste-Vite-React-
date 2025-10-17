@@ -8,7 +8,8 @@ function App() {
 
   return (
     <>
-    <h1>Quadrados vermelhos</h1>  
+    <h1>O Giovanni gosta de um bananão</h1>  
+    <img src="https://www.shutterstock.com/image-photo/young-man-eating-banana-home-260nw-2520838381.jpg"></img>
     </>
   )
 }
