@@ -69,6 +69,7 @@ input:focus {
     outline: none;
     border-color: var(--cor-primaria);
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    color: rgb(141, 9, 9);
 }
 
 button {
